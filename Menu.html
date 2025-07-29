@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Hojas de Estilos/Header.css">
+  <link rel="stylesheet" href="Hojas de Estilos/Menu.css">
+  <title>CHOQUE DE SABORES / MENÚ</title>
+</head>
+<body>
+   <!-- Header Principal -->
+  <header class="main-header" id="Header">
+    <div class="header-container">
+      
+      <!-- Logo y Marca -->
+      <div class="logo-section" id="Header-imagen-logo">
+        <a href="index.html" class="logo-link" aria-label="Ir a página de inicio">
+          <img id="Logo-header" src="Imagenes/Choque_de_Sabores_Logo.svg" alt="Choque de Sabores - Logo">
+        </a>
+        <div class="brand-text">
+          <h1 class="brand-name">CHOQUE DE SABORES</h1>
+          <span class="brand-tagline">Fusión Gastronómica</span>
+        </div>
+      </div>
+
+      <!-- Navegación Principal -->
+      <div class="header-navigation" id="Header-navegadores">
+        
+        <!-- Menú (Solo 3 elementos) -->
+        <nav class="desktop-nav" id="Header-nav-fijo" aria-label="Navegación principal">
+          <ul class="nav-menu" id="Header-nav-fijo-arreglo">
+            <li class="nav-item">
+              <a href="Menu.html" class="nav-link">
+                <span class="nav-icon">🍽️</span>
+                <span class="nav-text">MENÚ</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Reservas.html" class="nav-link nav-link--cta">
+                <span class="nav-icon">📅</span>
+                <span class="nav-text">RESERVAR</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Regala_Experiencia.html" class="nav-link">
+                <span class="nav-icon">🎁</span>
+                <span class="nav-text">REGALA UNA EXPERIENCIA</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Indicador de progreso -->
+      <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+  </header>
+
+
+  <main>
+    <!-- Hero del Menú -->
+    <section id="menu-hero">
+      <div class="menu-hero-content">
+        <h1>MENÚ "EL MUNDO"</h1>
+        <p>Un viaje gastronómico que fusiona los sabores del Perú con las mejores tradiciones culinarias del mundo</p>
+      </div>
+    </section>
+
+    <!-- Navegación del Menú -->
+    <section id="menu-nav">
+      <div class="container">
+        <nav class="menu-categories">
+          <button class="category-btn active" data-category="all">TODOS</button>
+          <button class="category-btn" data-category="entradas">ENTRADAS</button>
+          <button class="category-btn" data-category="nikkei">NIKKEI</button>
+          <button class="category-btn" data-category="fusion">FUSIÓN</button>
+          <button class="category-btn" data-category="principales">PRINCIPALES</button>
+          <button class="category-btn" data-category="postres">POSTRES</button>
+          <button class="category-btn" data-category="bebidas">BEBIDAS</button>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Sección del Menú -->
+    <section id="menu-items">
+      <div class="container">
+        
+        <!-- ENTRADAS -->
+        <div class="menu-category" data-category="entradas">
+          <h2 class="category-title">ENTRADAS</h2>
+          <div class="menu-grid">
+            
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇵🇪 Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Causa Limeña Deconstructed</h3>
+                  <span class="price">S/ 28</span>
+                </div>
+                <p class="description">Capas de papa amarilla, aguacate, cangrejo y alioli de ají amarillo. Una reinterpretación moderna del clásico peruano.</p>
+                <div class="item-tags">
+                  <span class="tag vegetarian">🌱</span>
+                  <span class="tag gluten-free">Sin Gluten</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇮🇹 Ítalo-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Antipasto Andino</h3>
+                  <span class="price">S/ 35</span>
+                </div>
+                <p class="description">Selección de quesos peruanos, aceitunas de Tacna, jamón serrano y chutneys de frutas exóticas con tostadas de quinoa.</p>
+                <div class="item-tags">
+                  <span class="tag">Tabla para Compartir</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇲🇽 Mexicano-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Tostadas de Tartar</h3>
+                  <span class="price">S/ 32</span>
+                </div>
+                <p class="description">Tartar de atún con ají amarillo, aguacate y maíz cancha sobre tostadas de camote crujientes.</p>
+                <div class="item-tags">
+                  <span class="tag spicy">🌶️ Picante</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇬🇷 Greco-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Dolmades de Quinoa</h3>
+                  <span class="price">S/ 26</span>
+                </div>
+                <p class="description">Hojas de parra rellenas de quinoa, hierbas andinas y queso fresco, servidas con salsa tzatziki de ají amarillo.</p>
+                <div class="item-tags">
+                  <span class="tag vegetarian">🌱</span>
+                  <span class="tag">Proteína Completa</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- NIKKEI -->
+        <div class="menu-category" data-category="nikkei">
+          <h2 class="category-title">NIKKEI</h2>
+          <div class="menu-grid">
+            
+            <div class="menu-item signature">
+              <div class="item-image">
+                <span class="cuisine-tag">🇯🇵 Nikkei</span>
+                <span class="signature-badge">★ Signature</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Nikkei Ceviche</h3>
+                  <span class="price">S/ 58</span>
+                </div>
+                <p class="description">Pescado del día, leche de tigre con sake y jengibre, cebolla morada, edamame y crocante de algas nori.</p>
+                <div class="item-tags">
+                  <span class="tag">Pescado del Día</span>
+                  <span class="tag gluten-free">Sin Gluten</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇯🇵 Nikkei</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Tiradito Nikkei</h3>
+                  <span class="price">S/ 45</span>
+                </div>
+                <p class="description">Cortes finos de pescado blanco con salsa ponzu-ají amarillo, palta y microgreens de wasabi.</p>
+                <div class="item-tags">
+                  <span class="tag">Entrada Premium</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇯🇵 Nikkei</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Sushi Roll Acevichado</h3>
+                  <span class="price">S/ 42</span>
+                </div>
+                <p class="description">Roll de salmón, palta y pepino bañado en leche de tigre, coronado con cebolla crispy y maíz tostado.</p>
+                <div class="item-tags">
+                  <span class="tag">8 Piezas</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇯🇵 Nikkei</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Maki Causa</h3>
+                  <span class="price">S/ 38</span>
+                </div>
+                <p class="description">Innovador roll envuelto en láminas de papa amarilla, relleno de langostinos tempura y ají amarillo.</p>
+                <div class="item-tags">
+                  <span class="tag">6 Piezas</span>
+                  <span class="tag">Creación Única</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- FUSIÓN MUNDIAL -->
+        <div class="menu-category" data-category="fusion">
+          <h2 class="category-title">FUSIÓN MUNDIAL</h2>
+          <div class="menu-grid">
+            
+            <div class="menu-item signature">
+              <div class="item-image">
+                <span class="cuisine-tag">🌍 Fusión</span>
+                <span class="signature-badge">★ Signature</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Pad Thai Peruano</h3>
+                  <span class="price">S/ 52</span>
+                </div>
+                <p class="description">Fideos de arroz con langostinos, salsa tamarindo-ají panca, maní garrapiñado y hierbas frescas.</p>
+                <div class="item-tags">
+                  <span class="tag">🇹🇭 Thai-Peruano</span>
+                  <span class="tag gluten-free">Sin Gluten</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇮🇳 Hindú-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Curry de Quinoa</h3>
+                  <span class="price">S/ 38</span>
+                </div>
+                <p class="description">Quinoa en curry de coco con verduras andinas, acompañado de naan de camote y chutney de ají amarillo.</p>
+                <div class="item-tags">
+                  <span class="tag vegetarian">🌱 Vegetariano</span>
+                  <span class="tag">Proteína Completa</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇫🇷 Franco-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Confit de Pato Amazónico</h3>
+                  <span class="price">S/ 68</span>
+                </div>
+                <p class="description">Pato confitado con hierbas amazónicas, pure de yuca al pisco y reducción de aguaymanto.</p>
+                <div class="item-tags">
+                  <span class="tag">Corte Premium</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇲🇦 Marroquí-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Tajín de Cordero Andino</h3>
+                  <span class="price">S/ 62</span>
+                </div>
+                <p class="description">Cordero tierno con especias marroquíes, papas nativas, aceitunas botija y couscous de quinoa.</p>
+                <div class="item-tags">
+                  <span class="tag">Cocción Lenta</span>
+                  <span class="tag spicy">🌶️ Aromático</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- PRINCIPALES -->
+        <div class="menu-category" data-category="principales">
+          <h2 class="category-title">PLATOS PRINCIPALES</h2>
+          <div class="menu-grid">
+            
+            <div class="menu-item signature">
+              <div class="item-image">
+                <span class="cuisine-tag">🇮🇹 Ítalo-Peruano</span>
+                <span class="signature-badge">★ Signature</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Lomo Saltado Mediterráneo</h3>
+                  <span class="price">S/ 65</span>
+                </div>
+                <p class="description">Lomo fino salteado con aceite de oliva, papas peruanas, tomates cherry confitados y hierbas mediterráneas sobre quinoa.</p>
+                <div class="item-tags">
+                  <span class="tag">Más Vendido</span>
+                  <span class="tag">350g de Carne</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇧🇷 Brasileño-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Moqueca de Pescado Amazónico</h3>
+                  <span class="price">S/ 55</span>
+                </div>
+                <p class="description">Pescado amazónico en salsa de coco con dendê, yuca cremosa y arroz de coco con cilantro.</p>
+                <div class="item-tags">
+                  <span class="tag">Sostenible</span>
+                  <span class="tag gluten-free">Sin Gluten</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇰🇷 Coreano-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Bulgogi de Alpaca</h3>
+                  <span class="price">S/ 72</span>
+                </div>
+                <p class="description">Alpaca marinada en salsa bulgogi con ají amarillo, acompañada de kimchi de repollo morado y arroz chaufa coreano.</p>
+                <div class="item-tags">
+                  <span class="tag">Proteína Andina</span>
+                  <span class="tag spicy">🌶️ Picante</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇵🇪 Peruano Moderno</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Ají de Gallina Gourmet</h3>
+                  <span class="price">S/ 48</span>
+                </div>
+                <p class="description">Pollo deshilachado en cremosa salsa de ají amarillo, nueces pecanas, acompañado de papas doradas y arroz basmati.</p>
+                <div class="item-tags">
+                  <span class="tag">Clásico Renovado</span>
+                  <span class="tag">Comfort Food</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇦🇷 Argentino-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Bife de Chorizo Chimichurri Andino</h3>
+                  <span class="price">S/ 78</span>
+                </div>
+                <p class="description">Bife de chorizo a la parrilla con chimichurri de huacatay, papas rústicas al romero y ensalada de quinoa.</p>
+                <div class="item-tags">
+                  <span class="tag">Premium Cut</span>
+                  <span class="tag">400g</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇪🇸 Español-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Paella Nikkei</h3>
+                  <span class="price">S/ 85</span>
+                </div>
+                <p class="description">Arroz bomba con mariscos frescos, salmón teriyaki, edamame y alioli de ají amarillo. Para compartir.</p>
+                <div class="item-tags">
+                  <span class="tag">Para 2-3 Personas</span>
+                  <span class="tag">Cocción 25 min</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- POSTRES -->
+        <div class="menu-category" data-category="postres">
+          <h2 class="category-title">POSTRES</h2>
+          <div class="menu-grid">
+            
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇫🇷 Franco-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Tiramisú de Lúcuma</h3>
+                  <span class="price">S/ 25</span>
+                </div>
+                <p class="description">Versión peruana del clásico italiano con crema de lúcuma, café peruano y bizcochos empapados en pisco.</p>
+                <div class="item-tags">
+                  <span class="tag">Fruta Peruana</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇯🇵 Nikkei</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Mochi de Chirimoya</h3>
+                  <span class="price">S/ 22</span>
+                </div>
+                <p class="description">Delicados mochis rellenos de helado de chirimoya con salsa de aguaymanto y crocante de ajonjolí negro.</p>
+                <div class="item-tags">
+                  <span class="tag">4 Piezas</span>
+                  <span class="tag gluten-free">Sin Gluten</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item signature">
+              <div class="item-image">
+                <span class="cuisine-tag">🇲🇽 Mexicano-Peruano</span>
+                <span class="signature-badge">★ Signature</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Churros Rellenos de Manjar</h3>
+                  <span class="price">S/ 28</span>
+                </div>
+                <p class="description">Churros artesanales rellenos de manjar blanco con cobertura de chocolate peruano y espolvoreados con canela de Ceilán.</p>
+                <div class="item-tags">
+                  <span class="tag">Para Compartir</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇮🇳 Hindú-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Kulfi de Coco y Maracuyá</h3>
+                  <span class="price">S/ 20</span>
+                </div>
+                <p class="description">Helado tradicional hindú de coco con salsa agridulce de maracuyá y pistachos garrapiñados.</p>
+                <div class="item-tags">
+                  <span class="tag">Refrescante</span>
+                  <span class="tag gluten-free">Sin Gluten</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇵🇪 Peruano Moderno</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Suspiro Limeño Deconstructed</h3>
+                  <span class="price">S/ 24</span>
+                </div>
+                <p class="description">Reinterpretación del clásico suspiro con manjar de cabra, merengue de pisco y crumble de galleta.</p>
+                <div class="item-tags">
+                  <span class="tag">Clásico Peruano</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇦🇷 Argentino-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Alfajor de Lúcuma</h3>
+                  <span class="price">S/ 18</span>
+                </div>
+                <p class="description">Alfajor artesanal relleno de dulce de lúcuma, bañado en chocolate peruano y coco rallado.</p>
+                <div class="item-tags">
+                  <span class="tag">Dulce Tradicional</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- BEBIDAS -->
+        <div class="menu-category" data-category="bebidas">
+          <h2 class="category-title">BEBIDAS</h2>
+          <div class="menu-grid">
+            
+            <div class="menu-item signature">
+              <div class="item-image">
+                <span class="cuisine-tag">🇵🇪 Peruano</span>
+                <span class="signature-badge">★ Signature</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Pisco Sour Fusión</h3>
+                  <span class="price">S/ 28</span>
+                </div>
+                <p class="description">Clásico pisco sour con twist de maracuyá, espuma de claras y bitters de angostura.</p>
+                <div class="item-tags">
+                  <span class="tag">Cocktail Signature</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇯🇵 Nikkei</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Sake Nikkei</h3>
+                  <span class="price">S/ 32</span>
+                </div>
+                <p class="description">Sake premium infusionado con ají amarillo, yuzu y hojas de shiso. Una fusión perfecta.</p>
+                <div class="item-tags">
+                  <span class="tag">Única Creación</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🌿 Naturales</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Chicha Morada Gourmet</h3>
+                  <span class="price">S/ 15</span>
+                </div>
+                <p class="description">Chicha morada artesanal con frutas andinas, canela y clavo de olor. Sin azúcar añadida.</p>
+                <div class="item-tags">
+                  <span class="tag">Antioxidante</span>
+                  <span class="tag">Sin Azúcar</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇲🇽 Mexicano-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Margarita de Aguaymanto</h3>
+                  <span class="price">S/ 30</span>
+                </div>
+                <p class="description">Tequila premium con licor de aguaymanto, lima y sal de maras. Refrescante y exótico.</p>
+                <div class="item-tags">
+                  <span class="tag spicy">🌶️ Con Ají</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🇧🇷 Brasileño-Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Caipirinha de Camu Camu</h3>
+                  <span class="price">S/ 26</span>
+                </div>
+                <p class="description">Cachaça con pulpa de camu camu, azúcar de caña y hielo picado. Rico en vitamina C.</p>
+                <div class="item-tags">
+                  <span class="tag">Vitamina C</span>
+                  <span class="tag">Amazónico</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">☕ Café Peruano</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Café de Especialidad</h3>
+                  <span class="price">S/ 12</span>
+                </div>
+                <p class="description">Café de altura de Chanchamayo, tostado artesanalmente. Notas de chocolate y frutas tropicales.</p>
+                <div class="item-tags">
+                  <span class="tag">Origen Único</span>
+                  <span class="tag">Fair Trade</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🍃 Infusiones</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Té de Coca Premium</h3>
+                  <span class="price">S/ 8</span>
+                </div>
+                <p class="description">Infusión de hojas de coca de altura con miel de abeja andina. Digestivo y energizante natural.</p>
+                <div class="item-tags">
+                  <span class="tag">Medicinal</span>
+                  <span class="tag">Altitud</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <span class="cuisine-tag">🥤 Smoothies</span>
+              </div>
+              <div class="item-content">
+                <div class="item-header">
+                  <h3>Smoothie Amazónico</h3>
+                  <span class="price">S/ 18</span>
+                </div>
+                <p class="description">Mezcla de açaí, camu camu, plátano y leche de coco. Superfood bowl líquido lleno de antioxidantes.</p>
+                <div class="item-tags">
+                  <span class="tag">Superfood</span>
+                  <span class="tag">Vegano</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sección de Reserva -->
+    <section id="menu-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>¿Te Antojaste?</h2>
+          <p>Reserva tu mesa y vive la experiencia completa del Choque de Sabores</p>
+          <a href="Reservas.html" class="btn-primary large">RESERVAR MESA</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>📍 Av. Principal 123, Lima, Perú</p>
+        <p>📞 +51 1 234-5678</p>
+        <p>✉️ info@choquedesabores.com</p>
+      </div>
+      <div class="footer-section">
+        <h4>Horarios</h4>
+        <p>Lunes - Jueves: 12:00 - 23:00</p>
+        <p>Viernes - Sábado: 12:00 - 24:00</p>
+        <p>Domingo: 12:00 - 22:00</p>
+      </div>
+      <div class="footer-section">
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2025 Choque de Sabores</p>
+    </div>
+  </footer>
+
+  <script src="Funciones/Menu_filter.js" defer></script>
+  <script src="Funciones/Header.js" defer></script>
+</body>
+</html>

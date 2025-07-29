@@ -1,0 +1,797 @@
+/* Reservas.css */
+
+/* Variables */
+:root {
+  --dorado: #D4AF37;
+  --dorado-claro: #F4E4BC;
+  --verde-oliva: #6B8E23;
+  --rojo-aji: #C21807;
+  --success: #28a745;
+  --error: #dc3545;
+  --warning: #ffc107;
+}
+
+/* Reset específico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, var(--azul), var(--negro));
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero de Reservas */
+#reservas-hero {
+  height: 40vh;
+  min-height: 300px;
+  background: linear-gradient(135deg, var(--azul) 0%, var(--verde-oliva) 50%, var(--negro) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#reservas-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.reservas-hero-content {
+  z-index: 2;
+  color: var(--blanco);
+  animation: fadeInUp 1s ease-out;
+}
+
+.reservas-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color: var(--dorado);
+  letter-spacing: 2px;
+}
+
+.reservas-hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Sección Principal */
+#reservas-main {
+  padding: 4rem 0;
+  background: var(--blanco);
+}
+
+.reservas-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Formulario de Reserva */
+.reserva-form-container {
+  background: var(--blanco);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  border: 1px solid rgba(22,59,115,0.1);
+}
+
+.reserva-form-container h2 {
+  font-size: 2.2rem;
+  color: var(--azul);
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.reserva-form-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--dorado);
+  border-radius: 2px;
+}
+
+/* Estilos del Formulario */
+.reserva-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: var(--azul);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: var(--blanco);
+  color: var(--negro);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--dorado);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+  transform: translateY(-2px);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Checkbox personalizado */
+.checkbox-group {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--negro);
+  line-height: 1.4;
+}
+
+.checkbox-label input[type="checkbox"] {
+  display: none;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--azul);
+  border-radius: 4px;
+  margin-right: 0.8rem;
+  position: relative;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark {
+  background: var(--dorado);
+  border-color: var(--dorado);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--blanco);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.checkbox-label a {
+  color: var(--azul);
+  text-decoration: none;
+}
+
+.checkbox-label a:hover {
+  text-decoration: underline;
+}
+
+/* Botón de Reserva */
+.btn-reservar {
+  background: linear-gradient(45deg, var(--dorado), var(--dorado-claro));
+  color: var(--negro);
+  border: none;
+  padding: 1.2rem 2rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.btn-reservar:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+  background: linear-gradient(45deg, var(--dorado-claro), var(--dorado));
+}
+
+.btn-reservar:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top: 2px solid var(--negro);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Tarjetas de Información */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-card {
+  background: var(--blanco);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border: 1px solid rgba(22,59,115,0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card h3 {
+  color: var(--azul);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-card p {
+  color: var(--negro);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.info-card a {
+  color: var(--dorado);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.info-card a:hover {
+  text-decoration: underline;
+}
+
+.link-mapa {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--azul);
+  color: var(--blanco) !important;
+  border-radius: 20px;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.link-mapa:hover {
+  background: var(--dorado);
+  color: var(--negro) !important;
+  transform: translateY(-2px);
+}
+
+/* Horarios */
+.horarios {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.horario-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.horario-item:last-child {
+  border-bottom: none;
+}
+
+.dia {
+  font-weight: bold;
+  color: var(--azul);
+}
+
+.hora {
+  color: var(--negro);
+}
+
+/* Lista de información */
+.info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.info-list li {
+  padding: 0.3rem 0;
+  color: var(--negro);
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.info-list li::before {
+  content: '•';
+  color: var(--dorado);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Experiencias especiales */
+.experiencias-card {
+  background: linear-gradient(135deg, var(--blanco) 0%, rgba(212,175,55,0.05) 100%);
+  border: 2px solid var(--dorado);
+}
+
+.experiencia-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(212,175,55,0.3);
+}
+
+.experiencia-item:last-of-type {
+  border-bottom: none;
+}
+
+.experiencia-item h4 {
+  color: var(--azul);
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.experiencia-item p {
+  font-size: 0.9rem;
+  color: var(--negro);
+  margin-bottom: 0.5rem;
+}
+
+.precio {
+  font-weight: bold;
+  color: var(--dorado);
+  font-size: 0.95rem;
+}
+
+.btn-experiencias {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: var(--dorado);
+  color: var(--negro);
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-experiencias:hover {
+  background: var(--dorado-claro);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+/* Disponibilidad */
+#disponibilidad {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--azul) 0%, var(--negro) 100%);
+  color: var(--blanco);
+}
+
+#disponibilidad h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--dorado);
+  margin-bottom: 3rem;
+}
+
+.disponibilidad-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.disponibilidad-dia {
+  background: rgba(248,246,240,0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(248,246,240,0.2);
+}
+
+.disponibilidad-dia h3 {
+  color: var(--dorado);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.horarios-disponibles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.horario {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.horario.disponible {
+  background: var(--success);
+  color: var(--blanco);
+}
+
+.horario.disponible:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+.horario.ocupado {
+  background: var(--error);
+  color: var(--blanco);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.disponibilidad-nota {
+  text-align: center;
+  font-style: italic;
+  color: var(--gris);
+  font-size: 0.9rem;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: var(--blanco);
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideInUp 0.4s ease;
+}
+
+.modal-header {
+  padding: 2rem 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h3 {
+  color: var(--azul);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.modal-close {
+  font-size: 2rem;
+  color: var(--gris);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: var(--negro);
+}
+
+.modal-body {
+  padding: 2rem;
+  text-align: center;
+}
+
+.confirmacion-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.modal-body p {
+  margin-bottom: 1.5rem;
+  color: var(--negro);
+  line-height: 1.6;
+}
+
+.reserva-detalles {
+  background: rgba(22,59,115,0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.reserva-detalles p {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirmacion-texto {
+  font-style: italic;
+  color: var(--azul);
+}
+
+.modal-footer {
+  padding: 1rem 2rem 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, var(--dorado), var(--dorado-claro));
+  color: var(--negro);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--azul);
+  border: 2px solid var(--azul);
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  transform: translateY(-2px);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estados de validación */
+.form-group.error input,
+.form-group.error select,
+.form-group.error textarea {
+  border-color: var(--error);
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+.form-group.success input,
+.form-group.success select,
+.form-group.success textarea {
+  border-color: var(--success);
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+}
+
+.error-message {
+  color: var(--error);
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  display: none;
+}
+
+.form-group.error .error-message {
+  display: block;
+}
+
+/* Footer */
+footer {
+  background: var(--negro);
+  color: var(--gris);
+  padding: 3rem 0 1rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section h4 {
+  color: var(--dorado);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  color: var(--gris);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--dorado);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(214,214,214,0.2);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reservas-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .reservas-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .info-container {
+    order: -1;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .disponibilidad-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .modal-content {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+  
+  .modal-footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .reservas-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .reserva-form-container,
+  .info-card {
+    padding: 1.5rem;
+  }
+  
+  .reserva-form-container h2 {
+    font-size: 1.8rem;
+  }
+  
+  #disponibilidad h2 {
+    font-size: 2rem;
+  }
+}

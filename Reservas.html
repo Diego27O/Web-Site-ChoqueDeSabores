@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Hojas de Estilos/Header.css">
+  <link rel="stylesheet" href="Hojas de Estilos/Reservas.css">
+  <title>CHOQUE DE SABORES / RESERVAS</title>
+</head>
+<body>
+     
+  <!-- Header Principal -->
+  <header class="main-header" id="Header">
+    <div class="header-container">
+      
+      <!-- Logo y Marca -->
+      <div class="logo-section" id="Header-imagen-logo">
+        <a href="index.html" class="logo-link" aria-label="Ir a página de inicio">
+          <img id="Logo-header" src="Imagenes/Choque_de_Sabores_Logo.svg" alt="Choque de Sabores - Logo">
+        </a>
+        <div class="brand-text">
+          <h1 class="brand-name">CHOQUE DE SABORES</h1>
+          <span class="brand-tagline">Fusión Gastronómica</span>
+        </div>
+      </div>
+
+      <!-- Navegación Principal -->
+      <div class="header-navigation" id="Header-navegadores">
+        
+        <!-- Menú (Solo 3 elementos) -->
+        <nav class="desktop-nav" id="Header-nav-fijo" aria-label="Navegación principal">
+          <ul class="nav-menu" id="Header-nav-fijo-arreglo">
+            <li class="nav-item">
+              <a href="Menu.html" class="nav-link">
+                <span class="nav-icon">🍽️</span>
+                <span class="nav-text">MENÚ</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Reservas.html" class="nav-link nav-link--cta">
+                <span class="nav-icon">📅</span>
+                <span class="nav-text">RESERVAR</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Regala_Experiencia.html" class="nav-link">
+                <span class="nav-icon">🎁</span>
+                <span class="nav-text">REGALA UNA EXPERIENCIA</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Indicador de progreso -->
+      <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+  </header>
+  <main>
+    <!-- Hero de Reservas -->
+    <section id="reservas-hero">
+      <div class="reservas-hero-content">
+        <h1>RESERVA TU MESA</h1>
+        <p>Vive una experiencia gastronómica única en el corazón de Lima</p>
+      </div>
+    </section>
+
+    <!-- Sección principal de reservas -->
+    <section id="reservas-main">
+      <div class="container">
+        <div class="reservas-grid">
+          
+          <!-- Formulario de reserva -->
+          <div class="reserva-form-container">
+            <h2>Datos de tu Reserva</h2>
+            
+            <form id="reserva-form" class="reserva-form">
+              <div class="form-group">
+                <label for="nombre">Nombre Completo *</label>
+                <input type="text" id="nombre" name="nombre" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Correo Electrónico *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="telefono">Teléfono *</label>
+                <input type="tel" id="telefono" name="telefono" required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fecha">Fecha *</label>
+                  <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="hora">Hora *</label>
+                  <select id="hora" name="hora" required>
+                    <option value="">Seleccionar hora</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="12:30">12:30 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="13:30">1:30 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="14:30">2:30 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="19:30">7:30 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                    <option value="20:30">8:30 PM</option>
+                    <option value="21:00">9:00 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                    <option value="22:00">10:00 PM</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="personas">Número de Personas *</label>
+                  <select id="personas" name="personas" required>
+                    <option value="">Seleccionar</option>
+                    <option value="1">1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="3">3 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="5">5 personas</option>
+                    <option value="6">6 personas</option>
+                    <option value="7">7 personas</option>
+                    <option value="8">8 personas</option>
+                    <option value="mas">Más de 8 personas</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="ocasion">Ocasión Especial</label>
+                  <select id="ocasion" name="ocasion">
+                    <option value="">Ninguna</option>
+                    <option value="cumpleanos">Cumpleaños</option>
+                    <option value="aniversario">Aniversario</option>
+                    <option value="cita">Cita Romántica</option>
+                    <option value="negocios">Cena de Negocios</option>
+                    <option value="celebracion">Celebración</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="comentarios">Comentarios Especiales</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Alergias alimentarias, preferencias dietéticas, solicitudes especiales..."></textarea>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="acepto-terminos" name="acepto-terminos" required>
+                  <span class="checkmark"></span>
+                  Acepto los <a href="#" target="_blank">términos y condiciones</a> *
+                </label>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="acepto-marketing" name="acepto-marketing">
+                  <span class="checkmark"></span>
+                  Deseo recibir ofertas especiales y promociones por email
+                </label>
+              </div>
+
+              <button type="submit" class="btn-reservar">
+                <span class="btn-text">CONFIRMAR RESERVA</span>
+                <span class="btn-loading" style="display: none;">
+                  <span class="spinner"></span>
+                  Procesando...
+                </span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Información del restaurante -->
+          <div class="info-container">
+            <div class="info-card">
+              <h3>📍 Ubicación</h3>
+              <p>Av. Principal 123<br>
+              Miraflores, Lima, Perú</p>
+              <a href="https://maps.google.com" target="_blank" class="link-mapa">Ver en Google Maps</a>
+            </div>
+
+            <div class="info-card">
+              <h3>🕒 Horarios</h3>
+              <div class="horarios">
+                <div class="horario-item">
+                  <span class="dia">Lunes - Jueves</span>
+                  <span class="hora">12:00 - 23:00</span>
+                </div>
+                <div class="horario-item">
+                  <span class="dia">Viernes - Sábado</span>
+                  <span class="hora">12:00 - 24:00</span>
+                </div>
+                <div class="horario-item">
+                  <span class="dia">Domingo</span>
+                  <span class="hora">12:00 - 22:00</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <h3>📞 Contacto</h3>
+              <p>Teléfono: <a href="tel:+51123456789">+51 1 234-5678</a></p>
+              <p>Email: <a href="mailto:reservas@choquedesabores.com">reservas@choquedesabores.com</a></p>
+              <p>WhatsApp: <a href="https://wa.me/51123456789" target="_blank">+51 123 456 789</a></p>
+            </div>
+
+            <div class="info-card">
+              <h3>ℹ️ Información Importante</h3>
+              <ul class="info-list">
+                <li>Las reservas se confirman por email o teléfono</li>
+                <li>Tiempo de tolerancia: 15 minutos</li>
+                <li>Para grupos de 8+ personas, contactar directamente</li>
+                <li>Política de cancelación: 2 horas antes</li>
+                <li>Ambiente smart casual</li>
+              </ul>
+            </div>
+
+            <div class="info-card experiencias-card">
+              <h3>🎁 Experiencias Especiales</h3>
+              <div class="experiencia-item">
+                <h4>Menú Degustación</h4>
+                <p>7 tiempos que narran la historia de la fusión peruana</p>
+                <span class="precio">S/ 180 por persona</span>
+              </div>
+              <div class="experiencia-item">
+                <h4>Cena con Maridaje</h4>
+                <p>Platos principales acompañados de vinos y piscos seleccionados</p>
+                <span class="precio">S/ 220 por persona</span>
+              </div>
+              <div class="experiencia-item">
+                <h4>Chef's Table</h4>
+                <p>Experiencia exclusiva en la cocina con el chef</p>
+                <span class="precio">S/ 350 por persona</span>
+              </div>
+              <a href="Subpaginas/Regala_Experiencia.html" class="btn-experiencias">VER TODAS LAS EXPERIENCIAS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de disponibilidad en tiempo real -->
+    <section id="disponibilidad">
+      <div class="container">
+        <h2>Disponibilidad en Tiempo Real</h2>
+        <div class="disponibilidad-grid">
+          <div class="disponibilidad-dia">
+            <h3>Hoy</h3>
+            <div class="horarios-disponibles">
+              <span class="horario ocupado">19:00</span>
+              <span class="horario disponible">19:30</span>
+              <span class="horario disponible">20:00</span>
+              <span class="horario ocupado">20:30</span>
+              <span class="horario disponible">21:00</span>
+              <span class="horario disponible">21:30</span>
+            </div>
+          </div>
+          <div class="disponibilidad-dia">
+            <h3>Mañana</h3>
+            <div class="horarios-disponibles">
+              <span class="horario disponible">12:00</span>
+              <span class="horario disponible">12:30</span>
+              <span class="horario disponible">13:00</span>
+              <span class="horario disponible">19:00</span>
+              <span class="horario disponible">19:30</span>
+              <span class="horario ocupado">20:00</span>
+            </div>
+          </div>
+          <div class="disponibilidad-dia">
+            <h3>Fin de Semana</h3>
+            <div class="horarios-disponibles">
+              <span class="horario ocupado">19:00</span>
+              <span class="horario ocupado">19:30</span>
+              <span class="horario ocupado">20:00</span>
+              <span class="horario disponible">20:30</span>
+              <span class="horario disponible">21:00</span>
+              <span class="horario disponible">21:30</span>
+            </div>
+          </div>
+        </div>
+        <p class="disponibilidad-nota">* Disponibilidad actualizada cada 15 minutos</p>
+      </div>
+    </section>
+
+    <!-- Modal de confirmación -->
+    <div id="modal-confirmacion" class="modal" style="display: none;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>¡Reserva Confirmada!</h3>
+          <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="confirmacion-icon">✅</div>
+          <p>Tu reserva ha sido procesada exitosamente.</p>
+          <div class="reserva-detalles">
+            <p><strong>Fecha:</strong> <span id="confirm-fecha"></span></p>
+            <p><strong>Hora:</strong> <span id="confirm-hora"></span></p>
+            <p><strong>Personas:</strong> <span id="confirm-personas"></span></p>
+            <p><strong>Nombre:</strong> <span id="confirm-nombre"></span></p>
+          </div>
+          <p class="confirmacion-texto">Te hemos enviado un email de confirmación con todos los detalles. Nos vemos pronto en Choque de Sabores!</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-secondary" onclick="cerrarModal()">CERRAR</button>
+          <a href="Menu.html" class="btn-primary">VER MENÚ</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>📍 Av. Principal 123, Lima, Perú</p>
+        <p>📞 +51 1 234-5678</p>
+        <p>✉️ info@choquedesabores.com</p>
+      </div>
+      <div class="footer-section">
+        <h4>Horarios</h4>
+        <p>Lunes - Jueves: 12:00 - 23:00</p>
+        <p>Viernes - Sábado: 12:00 - 24:00</p>
+        <p>Domingo: 12:00 - 22:00</p>
+      </div>
+      <div class="footer-section">
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2025 Choque de Sabores</p>
+    </div>
+  </footer>
+
+  <script src="Funciones/Reservas.js" defer></script>
+  <script src="Funciones/Header.js" defer></script>
+</body>
+</html>

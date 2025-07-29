@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Hojas de Estilos/Header.css">
+  <link rel="stylesheet" href="Hojas de Estilos/Regala_Experiencia.css">
+  <title>Regala una Experiencia - CHOQUE DE SABORES</title>
+</head>
+<body>
+  <!-- Header Principal -->
+  <header class="main-header" id="Header">
+    <div class="header-container">
+      
+      <!-- Logo y Marca -->
+      <div class="logo-section" id="Header-imagen-logo">
+        <a href="index.html" class="logo-link" aria-label="Ir a página de inicio">
+          <img id="Logo-header" src="Imagenes/Choque_de_Sabores_Logo.svg" alt="Choque de Sabores - Logo">
+        </a>
+        <div class="brand-text">
+          <h1 class="brand-name">CHOQUE DE SABORES</h1>
+          <span class="brand-tagline">Fusión Gastronómica</span>
+        </div>
+      </div>
+
+      <!-- Navegación Principal -->
+      <div class="header-navigation" id="Header-navegadores">
+        
+        <!-- Menú Desktop -->
+        <nav class="desktop-nav" id="Header-nav-fijo" aria-label="Navegación principal">
+          <ul class="nav-menu" id="Header-nav-fijo-arreglo">
+            <li class="nav-item">
+              <a href="Menu.html" class="nav-link">
+                <span class="nav-icon">🍽️</span>
+                <span class="nav-text">MENÚ</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Reservas.html" class="nav-link">
+                <span class="nav-icon">📅</span>
+                <span class="nav-text">RESERVAR</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Regala_Experiencia.html" class="nav-link nav-link--cta">
+                <span class="nav-icon">🎁</span>
+                <span class="nav-text">REGALA UNA EXPERIENCIA</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Indicador de progreso -->
+      <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección Hero -->
+    <section id="hero-regalo">
+      <div class="hero-content">
+        <div class="hero-badge">🎁</div>
+        <h1 class="hero-title">REGALA UNA EXPERIENCIA</h1>
+        <p class="hero-subtitle">Donde cada regalo se convierte en un recuerdo inolvidable</p>
+        <p class="hero-description">Sorprende a esa persona especial con una experiencia gastronómica única que fusiona los sabores del Perú con el mundo</p>
+        <div class="hero-buttons">
+          <a href="#experiencias" class="btn-primary">EXPLORAR EXPERIENCIAS</a>
+          <a href="#como-funciona" class="btn-secondary">¿CÓMO FUNCIONA?</a>
+        </div>
+      </div>
+      <div class="hero-floating">
+        <div class="float-item">🍽️</div>
+        <div class="float-item">✨</div>
+        <div class="float-item">🇵🇪</div>
+        <div class="float-item">🌍</div>
+      </div>
+    </section>
+
+    <!-- Sección Experiencias -->
+    <section id="experiencias">
+      <div class="container">
+        <h2>Nuestras Experiencias Regalo</h2>
+        <p class="section-subtitle">Momentos únicos diseñados para crear recuerdos que durarán toda la vida</p>
+        
+        <div class="experiencias-grid">
+          <!-- Clase de Cocina Privada -->
+          <div class="experiencia-card featured">
+            <div class="card-header">
+              <div class="card-icon">👨‍🍳</div>
+              <span class="card-badge">MÁS POPULAR</span>
+            </div>
+            <div class="card-image">
+              <div class="image-overlay">
+                <span class="experience-price">Desde S/ 350</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Clase de Cocina Privada con el Chef</h3>
+              <p>Una experiencia íntima y personalizada donde aprenderás los secretos de la fusión gastronómica de la mano de nuestro chef ejecutivo.</p>
+              
+              <div class="experience-details">
+                <div class="detail-item">
+                  <span class="detail-icon">👥</span>
+                  <span>1-4 personas</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-icon">⏱️</span>
+                  <span>3 horas</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-icon">🍽️</span>
+                  <span>3 platos + degustación</span>
+                </div>
+              </div>
+              
+              <div class="experience-includes">
+                <h4>Incluye:</h4>
+                <ul>
+                  <li>Clase magistral con chef ejecutivo</li>
+                  <li>Ingredientes premium y utensilios</li>
+                  <li>Delantal personalizado de regalo</li>
+                  <li>Recetario digital exclusivo</li>
+                  <li>Copa de bienvenida y maridaje</li>
+                  <li>Certificado de participación</li>
+                </ul>
+              </div>
+              
+              <button class="select-experience-btn" data-experience="clase-privada">
+                SELECCIONAR EXPERIENCIA
+              </button>
+            </div>
+          </div>
+
+          <!-- Menú Temático Nikkei -->
+          <div class="experiencia-card">
+            <div class="card-header">
+              <div class="card-icon">🍣</div>
+            </div>
+            <div class="card-image nikkei">
+              <div class="image-overlay">
+                <span class="experience-price">S/ 180</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Experiencia Nikkei</h3>
+              <p>Un viaje gastronómico que celebra la perfecta fusión entre la tradición peruana y la precisión japonesa.</p>
+              
+              <div class="experience-details">
+                <div class="detail-item">
+                  <span class="detail-icon">👥</span>
+                  <span>2 personas</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-icon">⏱️</span>
+                  <span>2.5 horas</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-icon">🍽️</span>
+                  <span>Menú degustación</span>
+                </div>
+              </div>
+              
+              <div class="experience-includes">
+                <h4>Incluye:</h4>
+                <ul>
+                  <li>Menú degustación de 7 tiempos</li>
+                  <li>Maridaje con sake premium y pisco</li>
+                  <li>Explicación de cada preparación</li>
+                  <li>Ambiente temático japonés-peruano</li>
+                  <li>Recuerdo fotográfico</li>
+                </ul>
+              </div>
+              
+              <button class="select-experience-btn" data-experience="nikkei">
+                SELECCIONAR EXPERIENCIA
+              </button>
+            </div>
+          </div>
+
+          <!-- Menú Temático Mediterráneo-Andino -->
+          <div class="experiencia-card">
+            <div class="card-header">
+              <div class="card-icon">🌿</div>
+            </div>
+            <div class="card-image mediterraneo">
+              <div class="image-overlay">
+                <span class="experience-price">S/ 165</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Fusión Mediterráneo-Andina</h3>
+              <p>Descubre cómo los sabores del Mediterráneo danzan con los ingredientes ancestrales de los Andes peruanos.</p>
+              
+              <div class="experience-details">
+                <div class="detail-item">
+                  <span class="detail-icon">👥</span>
+                  <span>2 personas</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-icon">⏱️</span>
+                  <span>2 horas</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-icon">🍽️</span>
+                  <span>Menú especializado</span>
+                </div>
+              </div>
+              
+              <div class="experience-includes">
+                <h4>Incluye:</h4>
+                <ul>
+                  <li>Menú de 5 tiempos temático</li>
+                  <li>Maridaje con vinos boutique</li>
+                  <li>Aceite de oliva artesanal de regalo</li>
+                  <li>Charla sobre ingredientes andinos</li>
+                  <li>Playlist mediterránea en vivo</li>
+                </ul>
+              </div>
+              
+              <button class="select-experience-btn" data-experience="mediterraneo">
+                SELECCIONAR EXPERIENCIA
+              </button>
+            </div>
+          </div>
+
+          <!-- Experiencia Chifa Gourmet -->
+          <div class="experiencia-card">
+            <div class="card-header">
+              <div class="card-icon">🥢</div>
+            </div>
+            <div class="card-image chifa">
+              <div class="image-overlay">
+                <span class="experience-price">S/ 140</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Chifa Gourmet Experience</h3>
+              <p>La reinvención elegante de la cocina chino-peruana que conquistó el corazón de Lima, elevada a nivel gourmet.</p>
+              
+              <div class="experience-details">
+                <div class="detail-item">
+                  <span class="detail-icon">👥</span>
+                  <span>2-3 personas</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-icon">⏱️</span>
+                  <span>1.5 horas</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-icon">🍽️</span>
+                  <span>Selección premium</span>
+                </div>
+              </div>
+              
+              <div class="experience-includes">
+                <h4>Incluye:</h4>
+                <ul>
+                  <li>Selección de clásicos renovados</li>
+                  <li>Wok en vivo frente a tu mesa</li>
+                  <li>Té de jasmín y tragos orientales</li>
+                  <li>Palillos artesanales de regalo</li>
+                  <li>Historia del chifa en Lima</li>
+                </ul>
+              </div>
+              
+              <button class="select-experience-btn" data-experience="chifa">
+                SELECCIONAR EXPERIENCIA
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Cómo Funciona -->
+    <section id="como-funciona">
+      <div class="container">
+        <h2>¿Cómo Funciona?</h2>
+        <p class="section-subtitle">Regalar una experiencia nunca fue tan fácil</p>
+        
+        <div class="steps-container">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Elige la Experiencia</h3>
+              <p>Selecciona la experiencia gastronómica perfecta según los gustos y preferencias de esa persona especial.</p>
+            </div>
+            <div class="step-icon">🎯</div>
+          </div>
+          
+          <div class="step-connector"></div>
+          
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Personaliza tu Regalo</h3>
+              <p>Añade un mensaje personal, elige la presentación y configura los detalles especiales de la experiencia.</p>
+            </div>
+            <div class="step-icon">💝</div>
+          </div>
+          
+          <div class="step-connector"></div>
+          
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Reserva y Coordina</h3>
+              <p>Nosotros nos encargamos de coordinar la fecha perfecta y preparar cada detalle para que la experiencia sea inolvidable.</p>
+            </div>
+            <div class="step-icon">📅</div>
+          </div>
+          
+          <div class="step-connector"></div>
+          
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>¡A Disfrutar!</h3>
+              <p>Tu ser querido vivirá una experiencia gastronómica única que recordará para siempre.</p>
+            </div>
+            <div class="step-icon">✨</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Por Qué Regalar Experiencias -->
+    <section id="por-que-regalar">
+      <div class="container">
+        <div class="why-content">
+          <div class="why-text">
+            <h2>¿Por Qué Regalar una Experiencia Gastronómica?</h2>
+            <div class="reasons-grid">
+              <div class="reason">
+                <div class="reason-icon">🧠</div>
+                <div class="reason-content">
+                  <h4>Crea Recuerdos Duraderos</h4>
+                  <p>Las experiencias se quedan en la memoria para siempre, a diferencia de los objetos materiales que pueden perderse u olvidarse.</p>
+                </div>
+              </div>
+              
+              <div class="reason">
+                <div class="reason-icon">❤️</div>
+                <div class="reason-content">
+                  <h4>Fortalece Vínculos</h4>
+                  <p>Compartir una experiencia gastronómica crea conexiones más profundas y momentos de calidad juntos.</p>
+                </div>
+              </div>
+              
+              <div class="reason">
+                <div class="reason-icon">🌟</div>
+                <div class="reason-content">
+                  <h4>Es Único y Personal</h4>
+                  <p>Cada experiencia es irrepetible y se adapta a los gustos específicos de quien la recibe.</p>
+                </div>
+              </div>
+              
+              <div class="reason">
+                <div class="reason-icon">📚</div>
+                <div class="reason-content">
+                  <h4>Aprendizaje Divertido</h4>
+                  <p>Nuestras experiencias combinan diversión con conocimiento culinario y cultural.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="why-image">
+            <div class="image-placeholder">
+              <span>Momentos Únicos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section id="testimonios">
+      <div class="container">
+        <h2>Lo Que Dicen Nuestros Comensales</h2>
+        
+        <div class="testimonios-grid">
+          <div class="testimonio">
+            <div class="testimonio-content">
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <p>"La clase de cocina privada fue el regalo perfecto para nuestro aniversario. Aprendimos técnicas increíbles y nos divertimos mucho. ¡Una experiencia que nunca olvidaremos!"</p>
+            </div>
+            <div class="testimonio-author">
+              <div class="author-avatar">MC</div>
+              <div class="author-info">
+                <h4>María & Carlos</h4>
+                <span>Clase Privada de Cocina</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonio">
+            <div class="testimonio-content">
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <p>"El menú Nikkei fue una explosión de sabores. Cada plato contaba una historia y el maridaje fue perfecto. Sin duda, el mejor regalo que he recibido."</p>
+            </div>
+            <div class="testimonio-author">
+              <div class="author-avatar">AR</div>
+              <div class="author-info">
+                <h4>Ana Rosa</h4>
+                <span>Experiencia Nikkei</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonio">
+            <div class="testimonio-content">
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <p>"Regalé la experiencia Mediterráneo-Andina a mi madre y quedó fascinada. La atención al detalle y la calidad de cada preparación fueron extraordinarias."</p>
+            </div>
+            <div class="testimonio-author">
+              <div class="author-avatar">JP</div>
+              <div class="author-info">
+                <h4>José Pablo</h4>
+                <span>Fusión Mediterráneo-Andina</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección CTA Final -->
+    <section id="cta-final">
+      <div class="container">
+        <div class="cta-content">
+          <h2>¿Listo para Regalar una Experiencia Inolvidable?</h2>
+          <p>Sorprende a esa persona especial con un regalo que perdurará en su memoria para siempre</p>
+          
+          <div class="cta-stats">
+            <div class="stat">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Experiencias Regaladas</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">98%</span>
+              <span class="stat-label">Satisfacción Garantizada</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">12</span>
+              <span class="stat-label">Meses de Validez</span>
+            </div>
+          </div>
+          
+          <div class="cta-buttons">
+            <a href="#experiencias" class="btn-primary large">ELEGIR EXPERIENCIA</a>
+            <a href="tel:+5112345678" class="btn-secondary large">CONSULTAR POR TELÉFONO</a>
+          </div>
+          
+          <div class="cta-features">
+            <div class="feature">✅ Válido por 12 meses</div>
+            <div class="feature">✅ Fechas flexibles</div>
+            <div class="feature">✅ Satisfacción garantizada</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>📍 Av. Principal 123, Lima, Perú</p>
+        <p>📞 +51 1 234-5678</p>
+        <p>✉️ experiencias@choquedesabores.com</p>
+      </div>
+      <div class="footer-section">
+        <h4>Horarios de Experiencias</h4>
+        <p>Martes - Jueves: 15:00 - 21:00</p>
+        <p>Viernes - Sábado: 14:00 - 22:00</p>
+        <p>Domingo: 14:00 - 20:00</p>
+      </div>
+      <div class="footer-section">
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2025 Choque de Sabores</p>
+    </div>
+  </footer>
+
+  <script src="Funciones/Header.js" defer></script>
+  <script src="Funciones/Regala_Experiencia.js" defer></script>
+</body>
+</html>

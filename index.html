@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Hojas de Estilos/Header.css">
+  <link rel="stylesheet" href="Hojas de Estilos/Index.css">
+  <title>CHOQUE DE SABORES</title>
+</head>
+<body>
+<!-- Header Principal -->
+  <header class="main-header" id="Header">
+    <div class="header-container">
+      
+      <!-- Logo y Marca -->
+      <div class="logo-section" id="Header-imagen-logo">
+        <a href="index.html" class="logo-link" aria-label="Ir a página de inicio">
+          <img id="Logo-header" src="Imagenes/Choque_de_Sabores_Logo.svg" alt="Choque de Sabores - Logo">
+        </a>
+        <div class="brand-text">
+          <h1 class="brand-name">CHOQUE DE SABORES</h1>
+          <span class="brand-tagline">Fusión Gastronómica</span>
+        </div>
+      </div>
+
+      <!-- Navegación Principal -->
+      <div class="header-navigation" id="Header-navegadores">
+        
+        <!-- Menú (Solo 3 elementos) -->
+        <nav class="desktop-nav" id="Header-nav-fijo" aria-label="Navegación principal">
+          <ul class="nav-menu" id="Header-nav-fijo-arreglo">
+            <li class="nav-item">
+              <a href="Menu.html" class="nav-link">
+                <span class="nav-icon">🍽️</span>
+                <span class="nav-text">MENÚ</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Reservas.html" class="nav-link nav-link--cta">
+                <span class="nav-icon">📅</span>
+                <span class="nav-text">RESERVAR</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Regala_Experiencia.html" class="nav-link">
+                <span class="nav-icon">🎁</span>
+                <span class="nav-text">REGALA UNA EXPERIENCIA</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Indicador de progreso, se llenara una barra debajo del menu conforme navegues por las secciones -->
+      <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección Hero -->
+    <section id="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">CHOQUE DE SABORES</h1>
+        <p class="hero-subtitle">Donde la tradición peruana se encuentra con el mundo</p>
+        <div class="hero-buttons">
+          <a href="Reservas.html" class="btn-primary">RESERVAR MESA</a>
+          <a href="Menu.html" class="btn-secondary">VER MENÚ</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Descubre más</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- Sección Filosofía -->
+    <section id="filosofia">
+      <div class="container">
+        <h2>Nuestra Filosofía</h2>
+        <div class="filosofia-grid">
+          <div class="filosofia-card">
+            <div class="card-icon">🇵🇪</div>
+            <h3>Raíces Peruanas</h3>
+            <p>Celebramos la rica herencia culinaria del Perú, desde los sabores ancestrales hasta las técnicas modernas que han conquistado el mundo.</p>
+          </div>
+          <div class="filosofia-card">
+            <div class="card-icon">🌍</div>
+            <h3>Fusión Mundial</h3>
+            <p>Combinamos lo mejor de la gastronomía peruana con influencias asiáticas, mediterráneas y contemporáneas para crear experiencias únicas.</p>
+          </div>
+          <div class="filosofia-card">
+            <div class="card-icon">🍽️</div>
+            <h3>Experiencia Total</h3>
+            <p>Cada plato cuenta una historia, cada sabor es un viaje. Creamos momentos memorables que van más allá de la comida.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Platos Destacados -->
+    <section id="platos-destacados">
+      <div class="container">
+        <h2>Platos Signature</h2>
+        <div class="platos-grid">
+          <div class="plato-card">
+            <div class="plato-image">
+              <div class="plato-overlay">
+                <span class="plato-price">S/ 58</span>
+              </div>
+            </div>
+            <div class="plato-info">
+              <h3>Nikkei Ceviche</h3>
+              <p>Pescado fresco del día, leche de tigre con toques de sake y jengibre, cebolla morada y ají amarillo. Una perfecta fusión peruano-japonesa.</p>
+            </div>
+          </div>
+          <div class="plato-card">
+            <div class="plato-image">
+              <div class="plato-overlay">
+                <span class="plato-price">S/ 65</span>
+              </div>
+            </div>
+            <div class="plato-info">
+              <h3>Lomo Saltado Mediterráneo</h3>
+              <p>Lomo fino salteado con aceite de oliva, papas peruanas, tomates cherry confitados y hierbas mediterráneas sobre cama de quinoa.</p>
+            </div>
+          </div>
+          <div class="plato-card">
+            <div class="plato-image">
+              <div class="plato-overlay">
+                <span class="plato-price">S/ 45</span>
+              </div>
+            </div>
+            <div class="plato-info">
+              <h3>Causa Limeña Deconstructed</h3>
+              <p>Reinterpretación moderna de la clásica causa, con capas de papa amarilla, aguacate, cangrejo y alioli de ají amarillo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="platos-cta">
+          <a href="Menu.html" class="btn-primary">VER MENÚ COMPLETO</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Experiencia -->
+    <section id="experiencia">
+      <div class="container">
+        <div class="experiencia-content">
+          <div class="experiencia-text">
+            <h2>Una Experiencia Única</h2>
+            <p>En Choque de Sabores, cada visita es un viaje culinario que despierta todos tus sentidos. Nuestro ambiente cálido y contemporáneo refleja la esencia de la hospitalidad peruana, mientras que nuestra cocina abierta te permite ser testigo de la magia que ocurre en cada preparación.</p>
+            <div class="experiencia-stats">
+              <div class="stat">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Años de Experiencia</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">200+</span>
+                <span class="stat-label">Platos Creados</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">10K+</span>
+                <span class="stat-label">Comensales Felices</span>
+              </div>
+            </div>
+            <!-- Botón para conocer la historia (subpagina no creada) -->
+            <a href="Subpaginas/Choque_de_Sabores.html" class="btn-secondary">CONOCE NUESTRA HISTORIA</a>
+          </div>
+          <div class="experiencia-image">
+            <div class="image-placeholder">
+              <span>Chef en Acción</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Reserva -->
+    <section id="reserva-cta">
+      <div class="container">
+        <div class="reserva-content">
+          <h2>¿Listo para vivir el Choque de Sabores?</h2>
+          <p>Reserva tu mesa y déjate sorprender por una experiencia gastronómica que fusiona lo mejor del Perú con el mundo.</p>
+          <div class="reserva-buttons">
+            <a href="Reservas.html" class="btn-primary large">RESERVAR AHORA</a>
+            <a href="Regala_Experiencia.html" class="btn-secondary large">REGALAR EXPERIENCIA</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>📍 Av. Principal 123, Lima, Perú</p>
+        <p>📞 +51 1 234-5678</p>
+        <p>✉️ info@choquedesabores.com</p>
+      </div>
+      <div class="footer-section">
+        <h4>Horarios</h4>
+        <p>Lunes - Jueves: 12:00 - 23:00</p>
+        <p>Viernes - Sábado: 12:00 - 24:00</p>
+        <p>Domingo: 12:00 - 22:00</p>
+      </div>
+      <div class="footer-section">
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2025 Choque de Sabores</p>
+    </div>
+  </footer>
+
+  <script src="Funciones/Header.js" defer></script>
+</body>
+</html>
